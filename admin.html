@@ -568,9 +568,28 @@
         </div>
 
         <div>
-          <label class="block text-xs font-bold text-slate-700 mb-1">Photo Image URL *</label>
-          <input type="url" id="proj-image" required placeholder="https://images.unsplash.com/..." class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-brand-500">
-          <span class="text-[11px] text-slate-400 mt-0.5 block">Paste any photo URL from Unsplash or web</span>
+          <label class="block text-xs font-bold text-slate-700 mb-1">Project Photo *</label>
+          <div class="space-y-2">
+            <div class="flex items-center gap-3">
+              <label class="cursor-pointer px-4 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 border border-slate-300 text-xs font-bold text-slate-800 flex items-center gap-2 transition shadow-sm">
+                <i class="fa-solid fa-folder-open text-brand-600 text-sm"></i>
+                <span>Choose Photo from System / Computer</span>
+                <input type="file" id="proj-file-picker" accept="image/*" class="hidden">
+              </label>
+              <span class="text-xs text-slate-400">or type file name / URL below</span>
+            </div>
+
+            <!-- Preview Box -->
+            <div id="proj-preview-box" class="hidden p-2 rounded-xl border border-slate-200 bg-slate-50 flex items-center gap-3">
+              <img id="proj-preview-img" src="" alt="Selected Preview" class="w-16 h-16 object-cover rounded-lg border border-slate-300">
+              <div class="text-xs">
+                <p class="font-bold text-green-700"><i class="fa-solid fa-circle-check"></i> Photo loaded from your computer</p>
+                <p class="text-[11px] text-slate-400" id="proj-preview-name"></p>
+              </div>
+            </div>
+
+            <input type="text" id="proj-image" required placeholder="Select file above or type image filename (e.g. site1.jpg)..." class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-brand-500">
+          </div>
         </div>
 
         <div>
@@ -1005,10 +1024,31 @@
       });
     }
 
+    const projFilePicker = document.getElementById('proj-file-picker');
+    const projPreviewBox = document.getElementById('proj-preview-box');
+    const projPreviewImg = document.getElementById('proj-preview-img');
+    const projPreviewName = document.getElementById('proj-preview-name');
+    const projImageInput = document.getElementById('proj-image');
+
+    projFilePicker.addEventListener('change', (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = function(event) {
+        projImageInput.value = event.target.result;
+        projPreviewImg.src = event.target.result;
+        projPreviewName.textContent = file.name;
+        projPreviewBox.classList.remove('hidden');
+      };
+      reader.readAsDataURL(file);
+    });
+
     function openAddProjectModal() {
       document.getElementById('project-modal-title').textContent = "Add New Project";
       document.getElementById('proj-edit-id').value = '';
       projectForm.reset();
+      projPreviewBox.classList.add('hidden');
       projectModal.classList.remove('hidden');
     }
 
@@ -1030,6 +1070,14 @@
       document.getElementById('proj-location').value = p.location;
       document.getElementById('proj-image').value = p.image;
       document.getElementById('proj-desc').value = p.desc || '';
+
+      if (p.image) {
+        projPreviewImg.src = p.image;
+        projPreviewName.textContent = p.title;
+        projPreviewBox.classList.remove('hidden');
+      } else {
+        projPreviewBox.classList.add('hidden');
+      }
 
       projectModal.classList.remove('hidden');
     }
