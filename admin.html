@@ -90,8 +90,8 @@
        MAIN ADMIN LAYOUT
        ========================================== -->
   <div class="flex h-screen overflow-hidden">
-    <!-- Sidebar -->
-    <aside class="w-64 bg-navy-950 text-slate-300 flex flex-col justify-between hidden md:flex border-r border-slate-800">
+    <!-- Desktop Sidebar -->
+    <aside class="w-64 bg-navy-950 text-slate-300 flex flex-col justify-between hidden md:flex border-r border-slate-800 flex-shrink-0">
       <div>
         <!-- Brand Header -->
         <div class="p-5 border-b border-slate-800/80 flex items-center gap-3">
@@ -148,28 +148,97 @@
       </div>
     </aside>
 
+    <!-- Mobile Slide-over Drawer Backdrop -->
+    <div id="mobile-sidebar-backdrop" class="fixed inset-0 z-40 bg-navy-950/80 backdrop-blur-sm hidden md:hidden transition-opacity"></div>
+
+    <!-- Mobile Slide-over Drawer -->
+    <aside id="mobile-sidebar" class="fixed inset-y-0 left-0 z-50 w-72 bg-navy-950 text-slate-300 flex flex-col justify-between transform -translate-x-full md:hidden transition-transform duration-300 shadow-2xl">
+      <div>
+        <!-- Mobile Brand Header -->
+        <div class="p-5 border-b border-slate-800 flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <img src="logo_emblem_transparent.png" alt="Logo" class="h-10 w-auto object-contain filter drop-shadow">
+            <div>
+              <h1 class="font-extrabold font-heading text-white tracking-tight leading-none text-sm">
+                SREE DRAUPATHI
+              </h1>
+              <span class="text-[10px] text-brand-400 font-bold uppercase block mt-0.5">Admin Portal</span>
+            </div>
+          </div>
+          <button id="mobile-sidebar-close" type="button" class="text-slate-400 hover:text-white p-2 text-lg">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <nav class="p-4 space-y-1.5 text-sm font-medium">
+          <button data-tab="tab-dashboard" class="mobile-sidebar-tab active w-full flex items-center gap-3 px-4 py-3 rounded-xl bg-brand-500 text-navy-950 font-bold transition">
+            <i class="fa-solid fa-chart-pie text-base"></i>
+            <span>Dashboard</span>
+          </button>
+
+          <button data-tab="tab-leads" class="mobile-sidebar-tab w-full flex items-center justify-between px-4 py-3 rounded-xl hover:bg-navy-900 hover:text-white transition">
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-address-book text-base text-slate-400"></i>
+              <span>Leads & Enquiries</span>
+            </div>
+            <span class="mobile-sidebar-lead-count px-2 py-0.5 rounded-full text-[10px] font-bold bg-brand-500 text-navy-950">0</span>
+          </button>
+
+          <button data-tab="tab-projects" class="mobile-sidebar-tab w-full flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-navy-900 hover:text-white transition">
+            <i class="fa-solid fa-cubes text-base text-slate-400"></i>
+            <span>Projects & Portfolio</span>
+          </button>
+
+          <button data-tab="tab-pricing" class="mobile-sidebar-tab w-full flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-navy-900 hover:text-white transition">
+            <i class="fa-solid fa-calculator text-base text-slate-400"></i>
+            <span>Cost Calculator Rates</span>
+          </button>
+
+          <button data-tab="tab-settings" class="mobile-sidebar-tab w-full flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-navy-900 hover:text-white transition">
+            <i class="fa-solid fa-sliders text-base text-slate-400"></i>
+            <span>Company Profile</span>
+          </button>
+        </nav>
+      </div>
+
+      <!-- Bottom Mobile Links -->
+      <div class="p-4 border-t border-slate-800 space-y-2">
+        <a href="index.html" target="_blank" class="w-full flex items-center justify-center gap-2 py-2.5 px-3 rounded-lg bg-navy-900 hover:bg-slate-800 text-xs font-semibold text-brand-400 transition">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> View Live Website
+        </a>
+        <button id="mobile-logout-btn" class="w-full flex items-center justify-center gap-2 py-2.5 px-3 rounded-lg bg-red-500/10 hover:bg-red-500/20 text-red-400 text-xs font-semibold transition">
+          <i class="fa-solid fa-right-from-bracket"></i> Logout
+        </button>
+      </div>
+    </aside>
+
     <!-- Main Content Area -->
     <div class="flex-1 flex flex-col overflow-y-auto">
       <!-- Top Bar -->
-      <header class="bg-white border-b border-slate-200 px-6 py-4 flex items-center justify-between sticky top-0 z-30 shadow-sm">
+      <header class="bg-white border-b border-slate-200 px-4 sm:px-6 py-3.5 flex items-center justify-between sticky top-0 z-30 shadow-sm">
         <div class="flex items-center gap-3">
-          <h2 id="page-title" class="text-xl font-bold font-heading text-navy-900">Admin Dashboard</h2>
+          <button id="admin-mobile-toggle" type="button" class="md:hidden p-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-base focus:outline-none">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <h2 id="page-title" class="text-base sm:text-xl font-bold font-heading text-navy-900 truncate">Admin Dashboard</h2>
         </div>
-        <div class="flex items-center gap-4">
-          <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-50 text-green-700 text-xs font-semibold border border-green-200">
-            <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> System Online
+        <div class="flex items-center gap-3">
+          <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-green-50 text-green-700 text-[11px] font-semibold border border-green-200">
+            <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+            <span class="hidden sm:inline">System</span> Online
           </span>
           <div class="flex items-center gap-2">
             <div class="w-8 h-8 rounded-full bg-navy-900 text-white font-bold flex items-center justify-center text-xs">
-              AD
+              SD
             </div>
-            <span class="text-xs font-bold text-slate-700 hidden sm:inline">Admin User</span>
+            <span class="text-xs font-bold text-slate-700 hidden sm:inline">Admin</span>
           </div>
         </div>
       </header>
 
       <!-- Tab Content Area -->
-      <main class="p-6 sm:p-8 space-y-8 flex-1">
+      <main class="p-4 sm:p-8 space-y-6 sm:space-y-8 flex-1 pb-24 md:pb-8">
         
         <!-- ==========================================
              TAB 1: DASHBOARD OVERVIEW
@@ -512,6 +581,31 @@
         </section>
 
       </main>
+
+      <!-- Mobile Bottom Navigation App Bar -->
+      <nav class="md:hidden fixed bottom-0 left-0 right-0 z-30 bg-navy-950 border-t border-slate-800 px-2 py-2 flex justify-around items-center text-center shadow-2xl">
+        <button data-tab="tab-dashboard" class="mobile-bottom-tab active flex flex-col items-center py-1 px-2.5 rounded-lg text-brand-400 transition">
+          <i class="fa-solid fa-chart-pie text-lg"></i>
+          <span class="text-[10px] font-bold mt-1 leading-none">Home</span>
+        </button>
+        <button data-tab="tab-leads" class="mobile-bottom-tab flex flex-col items-center py-1 px-2.5 rounded-lg text-slate-400 hover:text-white transition relative">
+          <i class="fa-solid fa-address-book text-lg"></i>
+          <span class="text-[10px] font-semibold mt-1 leading-none">Leads</span>
+          <span class="mobile-lead-badge-dot hidden absolute top-0.5 right-2 w-2 h-2 rounded-full bg-brand-500 animate-ping"></span>
+        </button>
+        <button data-tab="tab-projects" class="mobile-bottom-tab flex flex-col items-center py-1 px-2.5 rounded-lg text-slate-400 hover:text-white transition">
+          <i class="fa-solid fa-cubes text-lg"></i>
+          <span class="text-[10px] font-semibold mt-1 leading-none">Projects</span>
+        </button>
+        <button data-tab="tab-pricing" class="mobile-bottom-tab flex flex-col items-center py-1 px-2.5 rounded-lg text-slate-400 hover:text-white transition">
+          <i class="fa-solid fa-calculator text-lg"></i>
+          <span class="text-[10px] font-semibold mt-1 leading-none">Rates</span>
+        </button>
+        <button data-tab="tab-settings" class="mobile-bottom-tab flex flex-col items-center py-1 px-2.5 rounded-lg text-slate-400 hover:text-white transition">
+          <i class="fa-solid fa-sliders text-lg"></i>
+          <span class="text-[10px] font-semibold mt-1 leading-none">Settings</span>
+        </button>
+      </nav>
     </div>
   </div>
 
@@ -797,9 +891,40 @@
     });
 
     // ==========================================
-    // TAB SWITCHING LOGIC
+    // MOBILE DRAWER & BOTTOM NAV LOGIC
+    // ==========================================
+    const mobileSidebar = document.getElementById('mobile-sidebar');
+    const mobileSidebarBackdrop = document.getElementById('mobile-sidebar-backdrop');
+    const adminMobileToggle = document.getElementById('admin-mobile-toggle');
+    const mobileSidebarClose = document.getElementById('mobile-sidebar-close');
+    const mobileLogoutBtn = document.getElementById('mobile-logout-btn');
+
+    function openMobileSidebar() {
+      mobileSidebarBackdrop.classList.remove('hidden');
+      mobileSidebar.classList.remove('-translate-x-full');
+    }
+
+    function closeMobileSidebar() {
+      mobileSidebar.classList.add('-translate-x-full');
+      mobileSidebarBackdrop.classList.add('hidden');
+    }
+
+    adminMobileToggle?.addEventListener('click', openMobileSidebar);
+    mobileSidebarClose?.addEventListener('click', closeMobileSidebar);
+    mobileSidebarBackdrop?.addEventListener('click', closeMobileSidebar);
+
+    mobileLogoutBtn?.addEventListener('click', () => {
+      sessionStorage.removeItem('admin_logged_in');
+      loginModal.classList.remove('hidden');
+      closeMobileSidebar();
+    });
+
+    // ==========================================
+    // TAB SWITCHING LOGIC (DESKTOP + MOBILE SYNC)
     // ==========================================
     const sidebarTabs = document.querySelectorAll('.sidebar-tab');
+    const mobileSidebarTabs = document.querySelectorAll('.mobile-sidebar-tab');
+    const mobileBottomTabs = document.querySelectorAll('.mobile-bottom-tab');
     const tabPanes = document.querySelectorAll('.tab-pane');
     const pageTitle = document.getElementById('page-title');
 
@@ -807,6 +932,7 @@
       tabPanes.forEach(pane => pane.classList.add('hidden'));
       document.getElementById(tabId)?.classList.remove('hidden');
 
+      // Update Desktop Sidebar
       sidebarTabs.forEach(btn => {
         if (btn.getAttribute('data-tab') === tabId) {
           btn.className = "sidebar-tab active w-full flex items-center gap-3 px-4 py-3 rounded-xl bg-brand-500 text-navy-950 font-bold transition";
@@ -815,17 +941,46 @@
         }
       });
 
+      // Update Mobile Drawer Tabs
+      mobileSidebarTabs.forEach(btn => {
+        if (btn.getAttribute('data-tab') === tabId) {
+          btn.className = "mobile-sidebar-tab active w-full flex items-center gap-3 px-4 py-3 rounded-xl bg-brand-500 text-navy-950 font-bold transition";
+        } else {
+          btn.className = "mobile-sidebar-tab w-full flex items-center justify-between px-4 py-3 rounded-xl hover:bg-navy-900 hover:text-white text-slate-300 transition";
+        }
+      });
+
+      // Update Mobile Bottom Bar Tabs
+      mobileBottomTabs.forEach(btn => {
+        if (btn.getAttribute('data-tab') === tabId) {
+          btn.className = "mobile-bottom-tab active flex flex-col items-center py-1 px-2.5 rounded-lg text-brand-400 transition font-bold";
+        } else {
+          btn.className = "mobile-bottom-tab flex flex-col items-center py-1 px-2.5 rounded-lg text-slate-400 hover:text-white transition font-medium";
+        }
+      });
+
+      // Update Title
       if (tabId === 'tab-dashboard') pageTitle.textContent = "Admin Dashboard";
-      else if (tabId === 'tab-leads') pageTitle.textContent = "Customer Leads & Inquiries";
-      else if (tabId === 'tab-projects') pageTitle.textContent = "Portfolio Projects Manager";
+      else if (tabId === 'tab-leads') pageTitle.textContent = "Customer Leads";
+      else if (tabId === 'tab-projects') pageTitle.textContent = "Projects & Portfolio";
       else if (tabId === 'tab-pricing') pageTitle.textContent = "Cost Estimator Rates";
-      else if (tabId === 'tab-settings') pageTitle.textContent = "Company Profile & Contact Settings";
+      else if (tabId === 'tab-settings') pageTitle.textContent = "Company Profile";
+
+      // Close mobile drawer if open
+      closeMobileSidebar();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     sidebarTabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-        switchTab(tab.getAttribute('data-tab'));
-      });
+      tab.addEventListener('click', () => switchTab(tab.getAttribute('data-tab')));
+    });
+
+    mobileSidebarTabs.forEach(tab => {
+      tab.addEventListener('click', () => switchTab(tab.getAttribute('data-tab')));
+    });
+
+    mobileBottomTabs.forEach(tab => {
+      tab.addEventListener('click', () => switchTab(tab.getAttribute('data-tab')));
     });
 
     // ==========================================
@@ -838,7 +993,13 @@
 
       document.getElementById('stat-total-leads').textContent = leads.length;
       document.getElementById('sidebar-lead-count').textContent = leads.length;
-      document.getElementById('stat-new-leads').textContent = leads.filter(l => l.status === 'New').length;
+      document.querySelectorAll('.mobile-sidebar-lead-count').forEach(el => el.textContent = leads.length);
+      const newLeadsCount = leads.filter(l => l.status === 'New').length;
+      document.getElementById('stat-new-leads').textContent = newLeadsCount;
+      document.querySelectorAll('.mobile-lead-badge-dot').forEach(el => {
+        if (newLeadsCount > 0) el.classList.remove('hidden');
+        else el.classList.add('hidden');
+      });
       document.getElementById('stat-total-projects').textContent = projects.length;
       document.getElementById('stat-current-rate').textContent = `₹${rates.premium.toLocaleString('en-IN')}`;
 
