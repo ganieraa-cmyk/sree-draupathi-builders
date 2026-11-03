@@ -1,0 +1,20 @@
+# Gradle / Android Studio exclusions
+.gradle/
+.idea/
+.kotlin/
+app/
+gradle/
+build/
+*.gradle.kts
+gradle.properties
+gradlew
+gradlew.bat
+local.properties
+
+# Legacy / temporary files
+index_cricpulse_backup.html
+pandavas_logo.jpg
+logo_badge_tight.png
+logo_clean_emblem.png
+logo_clean_full.png
+logo_emblem.png

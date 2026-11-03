@@ -1,0 +1,1753 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sree Draupathi Builders & Contractors | We Build What You Need</title>
+  <meta name="description" content="Leading construction company specializing in residential homes, commercial complexes, luxury villas, renovations and architectural planning.">
+  <link rel="icon" type="image/png" href="logo_emblem_transparent.png">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            heading: ['"Outfit"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#fffbeb',
+              100: '#fef3c7',
+              200: '#fde68a',
+              400: '#fbbf24',
+              500: '#f59e0b', // Construction Amber Gold
+              600: '#d97706',
+              700: '#b45309',
+            },
+            navy: {
+              800: '#1e293b',
+              900: '#0f172a',
+              950: '#090d16',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #0f172a; }
+    ::-webkit-scrollbar-thumb { background: #f59e0b; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #d97706; }
+
+    .hero-gradient {
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.92) 0%, rgba(15, 23, 42, 0.75) 50%, rgba(15, 23, 42, 0.88) 100%);
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+  <!-- ==========================================
+       TOP ANNOUNCEMENT / CONTACT BAR
+       ========================================== -->
+  <header class="bg-navy-950 text-slate-300 text-xs sm:text-sm py-2.5 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center space-x-6">
+        <span class="flex items-center gap-2">
+          <i class="fa-solid fa-phone text-brand-500"></i>
+          <a href="tel:+919876543210" class="hover:text-white transition company-phone">+91 98765 43210</a>
+        </span>
+        <span class="hidden md:flex items-center gap-2">
+          <i class="fa-solid fa-envelope text-brand-500"></i>
+          <a href="mailto:info@buildcompany.com" class="hover:text-white transition company-email">info@buildcompany.com</a>
+        </span>
+        <span class="hidden lg:flex items-center gap-2">
+          <i class="fa-solid fa-clock text-brand-500"></i>
+          <span>Mon - Sat: 9:00 AM - 7:00 PM</span>
+        </span>
+      </div>
+      <div class="flex items-center gap-4">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-brand-500/20 text-brand-400 font-medium text-xs">
+          <i class="fa-solid fa-shield-halved"></i> 10-Year Structural Warranty
+        </span>
+        <div class="hidden sm:flex items-center gap-3 pl-2 border-l border-slate-700">
+          <a href="#" class="hover:text-brand-400 transition"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="hover:text-brand-400 transition"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="hover:text-brand-400 transition"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" class="hover:text-brand-400 transition"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       MAIN NAVIGATION
+       ========================================== -->
+  <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-sm transition-all duration-300" id="main-nav">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-2.5 min-h-[74px]">
+        <!-- Logo & Brand Name Lockup (Fixed No-Wrap, Pixel-Perfect) -->
+        <a href="#home" class="flex items-center gap-3 group flex-shrink-0 py-1">
+          <img src="logo_emblem_transparent.png" alt="Sree Draupathi Builders Emblem" class="h-12 sm:h-14 w-auto object-contain filter drop-shadow transition-transform group-hover:scale-105">
+          <div class="flex flex-col justify-center">
+            <span class="text-base sm:text-lg lg:text-xl font-extrabold font-heading text-navy-950 tracking-tight leading-tight whitespace-nowrap">
+              SREE DRAUPATHI
+            </span>
+            <span class="text-[10px] sm:text-xs font-bold text-amber-600 tracking-wider uppercase leading-tight whitespace-nowrap mt-0.5">
+              BUILDERS & CONTRACTORS
+            </span>
+            <span class="text-[9px] text-slate-500 font-semibold tracking-wide uppercase leading-tight whitespace-nowrap mt-0.5 hidden sm:block">
+              We Build What You Need
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Menu (Streamlined, No Wrapping) -->
+        <div class="hidden lg:flex items-center space-x-5 xl:space-x-7 font-semibold text-slate-700 text-xs xl:text-sm">
+          <a href="#home" class="hover:text-brand-600 transition whitespace-nowrap">Home</a>
+          <a href="#about" class="hover:text-brand-600 transition whitespace-nowrap">About</a>
+          <a href="#services" class="hover:text-brand-600 transition whitespace-nowrap">Services</a>
+          <a href="#estimator" class="hover:text-brand-600 text-brand-600 font-bold transition flex items-center gap-1.5 whitespace-nowrap">
+            <i class="fa-solid fa-calculator text-xs"></i> Cost Estimator
+          </a>
+          <a href="#packages" class="hover:text-brand-600 transition whitespace-nowrap">Packages</a>
+          <a href="#projects" class="hover:text-brand-600 transition whitespace-nowrap">Portfolio</a>
+          <a href="#testimonials" class="hover:text-brand-600 transition whitespace-nowrap">Reviews</a>
+          <a href="#contact" class="hover:text-brand-600 transition whitespace-nowrap">Contact</a>
+        </div>
+
+        <!-- Action Buttons (Responsive Sizing) -->
+        <div class="hidden sm:flex items-center gap-2.5 flex-shrink-0">
+          <a href="#estimator" class="hidden xl:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold transition whitespace-nowrap">
+            <i class="fa-solid fa-calculator text-brand-600"></i> Free Quote
+          </a>
+          <a href="https://wa.me/919876543210?text=Hi%20Sree%20Draupathi%20Builders,%20I%20am%20looking%20for%20construction%20services" target="_blank" class="whatsapp-link px-4 py-2.5 rounded-xl bg-brand-500 hover:bg-brand-600 text-navy-950 font-extrabold text-xs shadow-md hover:shadow-brand-500/25 transition flex items-center gap-1.5 whitespace-nowrap">
+            <i class="fa-brands fa-whatsapp text-sm"></i>
+            <span>Consult Now</span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <div class="flex lg:hidden">
+          <button id="mobile-toggle" type="button" class="text-slate-700 hover:text-navy-900 focus:outline-none p-2 rounded-lg" aria-label="Toggle menu">
+            <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-3 pb-6 space-y-3 shadow-xl">
+      <a href="#home" class="mobile-link block px-3 py-2 rounded-md font-medium text-slate-800 hover:bg-slate-100">Home</a>
+      <a href="#about" class="mobile-link block px-3 py-2 rounded-md font-medium text-slate-800 hover:bg-slate-100">About Us</a>
+      <a href="#services" class="mobile-link block px-3 py-2 rounded-md font-medium text-slate-800 hover:bg-slate-100">Services</a>
+      <a href="#estimator" class="mobile-link block px-3 py-2 rounded-md font-semibold text-brand-600 bg-brand-50">⚡ Cost Calculator</a>
+      <a href="#packages" class="mobile-link block px-3 py-2 rounded-md font-medium text-slate-800 hover:bg-slate-100">Packages & Pricing</a>
+      <a href="#projects" class="mobile-link block px-3 py-2 rounded-md font-medium text-slate-800 hover:bg-slate-100">Portfolio & Projects</a>
+      <a href="#testimonials" class="mobile-link block px-3 py-2 rounded-md font-medium text-slate-800 hover:bg-slate-100">Client Reviews</a>
+      <a href="#contact" class="mobile-link block px-3 py-2 rounded-md font-medium text-slate-800 hover:bg-slate-100">Contact Us</a>
+      <div class="pt-2 flex flex-col gap-2">
+        <a href="tel:+919876543210" class="w-full py-2.5 text-center font-bold bg-slate-900 text-white rounded-lg"><i class="fa-solid fa-phone mr-2"></i> Call: +91 98765 43210</a>
+        <a href="https://wa.me/919876543210" target="_blank" class="w-full py-2.5 text-center font-bold bg-green-500 text-white rounded-lg"><i class="fa-brands fa-whatsapp mr-2"></i> Chat on WhatsApp</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+  <section id="home" class="relative min-h-[90vh] flex items-center justify-center bg-navy-950 text-white overflow-hidden">
+    <!-- Background Image with Overlay -->
+    <img src="https://images.unsplash.com/photo-1541888946425-d0fbb18615f3?auto=format&fit=crop&w=2000&q=80" alt="Construction background" class="absolute inset-0 w-full h-full object-cover opacity-25">
+    <div class="absolute inset-0 hero-gradient"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center lg:text-left">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        <!-- Hero Left Column -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-500/15 border border-brand-500/30 text-brand-400 font-semibold text-xs uppercase tracking-wider">
+            <span class="w-2 h-2 rounded-full bg-brand-400 animate-ping"></span>
+            WE BUILD WHAT YOU NEED
+          </div>
+          
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold font-heading tracking-tight leading-tight">
+            Sree Draupathi Builders <br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 via-amber-300 to-yellow-500">& Contractors</span>
+          </h1>
+
+          <p class="text-slate-300 text-base sm:text-lg max-w-2xl leading-relaxed">
+            Your premier turnkey construction partner. From architectural 3D plans to key handover — we build residential homes, commercial complexes, and modern renovations with guaranteed timeline and 100% material transparency.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
+            <a href="#estimator" class="px-7 py-3.5 rounded-xl bg-brand-500 hover:bg-brand-600 text-navy-950 font-bold text-base shadow-lg shadow-brand-500/25 transition-all transform hover:-translate-y-0.5 flex items-center gap-2">
+              <i class="fa-solid fa-calculator"></i> Calculate Building Cost
+            </a>
+            <a href="#projects" class="px-7 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-semibold text-base border border-white/20 backdrop-blur-sm transition-all flex items-center gap-2">
+              <i class="fa-solid fa-cubes"></i> View Our Projects
+            </a>
+          </div>
+
+          <!-- Trust Badges Under Hero -->
+          <div class="pt-8 grid grid-cols-2 sm:grid-cols-4 gap-4 border-t border-slate-800 text-left">
+            <div>
+              <p class="text-2xl sm:text-3xl font-extrabold text-brand-400 font-heading">15+</p>
+              <p class="text-xs text-slate-400">Years Experience</p>
+            </div>
+            <div>
+              <p class="text-2xl sm:text-3xl font-extrabold text-brand-400 font-heading">250+</p>
+              <p class="text-xs text-slate-400">Completed Projects</p>
+            </div>
+            <div>
+              <p class="text-2xl sm:text-3xl font-extrabold text-brand-400 font-heading">100%</p>
+              <p class="text-xs text-slate-400">On-Time Handover</p>
+            </div>
+            <div>
+              <p class="text-2xl sm:text-3xl font-extrabold text-brand-400 font-heading">4.9 ★</p>
+              <p class="text-xs text-slate-400">Customer Rating</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right Column: Quick Callback Card -->
+        <div class="lg:col-span-5">
+          <div class="glass-card p-6 sm:p-8 rounded-2xl shadow-2xl relative">
+            <div class="absolute -top-3 right-6 bg-brand-500 text-navy-950 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+              Free Site Visit
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold font-heading text-white mb-2">Book a Free Consultation</h3>
+            <p class="text-slate-300 text-xs sm:text-sm mb-6">Talk to our senior structural engineer & get an instant project estimate today.</p>
+
+            <form id="hero-consult-form" class="space-y-4 text-left">
+              <div>
+                <label class="block text-xs font-medium text-slate-300 mb-1">Your Full Name *</label>
+                <input type="text" required placeholder="e.g. Ramesh Kumar" class="w-full px-4 py-2.5 rounded-lg bg-navy-900/80 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 text-sm">
+              </div>
+              <div>
+                <label class="block text-xs font-medium text-slate-300 mb-1">Mobile / WhatsApp Number *</label>
+                <input type="tel" required placeholder="e.g. 9876543210" class="w-full px-4 py-2.5 rounded-lg bg-navy-900/80 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 text-sm">
+              </div>
+              <div class="grid grid-cols-2 gap-3">
+                <div>
+                  <label class="block text-xs font-medium text-slate-300 mb-1">Project Type</label>
+                  <select class="w-full px-3 py-2.5 rounded-lg bg-navy-900/80 border border-slate-700 text-white focus:outline-none focus:border-brand-500 text-sm">
+                    <option value="Residential Villa">Residential Villa</option>
+                    <option value="Independent House">Independent House</option>
+                    <option value="Commercial Complex">Commercial Complex</option>
+                    <option value="Renovation">Home Renovation</option>
+                    <option value="Interior Design">Interior Design</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-xs font-medium text-slate-300 mb-1">Plot / Built Area</label>
+                  <input type="text" placeholder="e.g. 1500 sq.ft" class="w-full px-3 py-2.5 rounded-lg bg-navy-900/80 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 text-sm">
+                </div>
+              </div>
+              <div>
+                <label class="block text-xs font-medium text-slate-300 mb-1">Location / City</label>
+                <input type="text" placeholder="e.g. Chennai / Coimbatore" class="w-full px-4 py-2.5 rounded-lg bg-navy-900/80 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 text-sm">
+              </div>
+              <button type="submit" class="w-full py-3 rounded-lg bg-brand-500 hover:bg-brand-600 text-navy-950 font-bold text-sm tracking-wide transition shadow-lg shadow-brand-500/20 flex items-center justify-center gap-2">
+                <span>Request Free Callback</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       INTERACTIVE CONSTRUCTION COST ESTIMATOR
+       ========================================== -->
+  <section id="estimator" class="py-20 bg-gradient-to-b from-slate-100 to-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="inline-block px-3.5 py-1 rounded-full bg-brand-100 text-brand-700 font-semibold text-xs tracking-wider uppercase mb-3">
+          Smart Estimator
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-navy-900">Instant Construction Cost Calculator</h2>
+        <p class="text-slate-600 mt-3 text-base">Estimate your total construction budget transparently based on built-up area, floors, and package specifications.</p>
+      </div>
+
+      <div class="bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden">
+        <div class="grid lg:grid-cols-12">
+          <!-- Estimator Controls (Left 7 Cols) -->
+          <div class="lg:col-span-7 p-6 sm:p-10 space-y-8">
+            <!-- 1. Built-up Area Slider -->
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <label class="text-sm font-bold text-navy-900 uppercase tracking-wide">1. Total Built-Up Area</label>
+                <span class="text-lg font-extrabold text-brand-600 bg-brand-50 px-3 py-1 rounded-lg border border-brand-200">
+                  <span id="area-val">1500</span> sq.ft
+                </span>
+              </div>
+              <input type="range" id="area-slider" min="500" max="8000" step="50" value="1500" class="w-full h-2.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-brand-500">
+              <div class="flex justify-between text-xs text-slate-400 mt-1">
+                <span>500 sq.ft (Compact)</span>
+                <span>4000 sq.ft</span>
+                <span>8000+ sq.ft (Villa)</span>
+              </div>
+            </div>
+
+            <!-- 2. Floors Selection -->
+            <div>
+              <label class="text-sm font-bold text-navy-900 uppercase tracking-wide block mb-3">2. Number of Floors</label>
+              <div class="grid grid-cols-4 gap-3" id="floors-container">
+                <button type="button" data-floors="1" class="floor-btn active py-2.5 px-3 rounded-xl border-2 border-brand-500 bg-brand-50 text-navy-900 font-bold text-sm text-center">G Only</button>
+                <button type="button" data-floors="2" class="floor-btn py-2.5 px-3 rounded-xl border-2 border-slate-200 hover:border-slate-300 text-slate-700 font-bold text-sm text-center">G + 1</button>
+                <button type="button" data-floors="3" class="floor-btn py-2.5 px-3 rounded-xl border-2 border-slate-200 hover:border-slate-300 text-slate-700 font-bold text-sm text-center">G + 2</button>
+                <button type="button" data-floors="4" class="floor-btn py-2.5 px-3 rounded-xl border-2 border-slate-200 hover:border-slate-300 text-slate-700 font-bold text-sm text-center">G + 3</button>
+              </div>
+            </div>
+
+            <!-- 3. Package Selection -->
+            <div>
+              <label class="text-sm font-bold text-navy-900 uppercase tracking-wide block mb-3">3. Choose Quality Package</label>
+              <div class="grid sm:grid-cols-3 gap-4" id="package-selector">
+                <!-- Basic -->
+                <div data-package="basic" data-rate="1850" class="pkg-card cursor-pointer p-4 rounded-2xl border-2 border-slate-200 hover:border-brand-500 transition relative">
+                  <div class="flex justify-between items-start mb-2">
+                    <h4 class="font-bold text-navy-900">Standard</h4>
+                    <span class="text-xs font-bold text-slate-500">₹1,850/sq.ft</span>
+                  </div>
+                  <p class="text-xs text-slate-500 mb-2">Ideal for rental homes or budget residential buildings.</p>
+                  <ul class="text-[11px] text-slate-600 space-y-1">
+                    <li>✓ Fe550 TMT Steel</li>
+                    <li>✓ Standard Vitrified Tiles</li>
+                    <li>✓ Asian Tractor Emulsion</li>
+                  </ul>
+                </div>
+
+                <!-- Premium (Default Active) -->
+                <div data-package="premium" data-rate="2250" class="pkg-card active cursor-pointer p-4 rounded-2xl border-2 border-brand-500 bg-brand-50/50 transition relative">
+                  <div class="absolute -top-2.5 right-3 bg-brand-500 text-navy-950 text-[10px] font-extrabold px-2 py-0.5 rounded-full uppercase">Most Popular</div>
+                  <div class="flex justify-between items-start mb-2">
+                    <h4 class="font-bold text-navy-900">Premium</h4>
+                    <span class="text-xs font-bold text-brand-600">₹2,250/sq.ft</span>
+                  </div>
+                  <p class="text-xs text-slate-500 mb-2">High quality materials for your dream family home.</p>
+                  <ul class="text-[11px] text-slate-600 space-y-1">
+                    <li>✓ UltraTech / ACC Cement</li>
+                    <li>✓ Jaquar / Cera Bathroom</li>
+                    <li>✓ Teak Wood Main Door</li>
+                  </ul>
+                </div>
+
+                <!-- Luxury -->
+                <div data-package="luxury" data-rate="2750" class="pkg-card cursor-pointer p-4 rounded-2xl border-2 border-slate-200 hover:border-brand-500 transition relative">
+                  <div class="flex justify-between items-start mb-2">
+                    <h4 class="font-bold text-navy-900">Luxury Royal</h4>
+                    <span class="text-xs font-bold text-slate-500">₹2,750/sq.ft</span>
+                  </div>
+                  <p class="text-xs text-slate-500 mb-2">Ultra-luxury finishes, Italian marble & smart fittings.</p>
+                  <ul class="text-[11px] text-slate-600 space-y-1">
+                    <li>✓ Italian Marble / Granite</li>
+                    <li>✓ Kohler Premium Fittings</li>
+                    <li>✓ Smart Home Automation</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Estimator Output (Right 5 Cols) -->
+          <div class="lg:col-span-5 bg-navy-950 p-6 sm:p-10 text-white flex flex-col justify-between border-t lg:border-t-0 lg:border-l border-slate-800">
+            <div>
+              <div class="flex items-center justify-between pb-6 border-b border-slate-800">
+                <span class="text-xs uppercase tracking-widest text-brand-400 font-bold">Estimated Cost Summary</span>
+                <span class="text-xs text-slate-400"><i class="fa-solid fa-clock-rotate-left mr-1"></i> Live Calculation</span>
+              </div>
+
+              <!-- Big Price Display -->
+              <div class="py-6">
+                <p class="text-xs text-slate-400 mb-1">Approximate Total Construction Cost</p>
+                <div class="text-3xl sm:text-4xl font-extrabold font-heading text-brand-400">
+                  ₹ <span id="total-cost-display">33,75,000</span>*
+                </div>
+                <p class="text-[11px] text-slate-400 mt-1">Based on <span id="summary-area">1,500</span> sq.ft × ₹<span id="summary-rate">2,250</span>/sq.ft (<span id="summary-package">Premium Package</span>)</p>
+              </div>
+
+              <!-- Cost Breakdown Items -->
+              <div class="space-y-3 bg-navy-900/60 p-4 rounded-xl border border-slate-800 text-xs">
+                <div class="flex justify-between text-slate-300">
+                  <span>Civil & Structural Work (~50%)</span>
+                  <span class="font-semibold text-white">₹ <span id="civil-cost">16,87,500</span></span>
+                </div>
+                <div class="flex justify-between text-slate-300">
+                  <span>Plumbing, Electrical & Sanitary (~20%)</span>
+                  <span class="font-semibold text-white">₹ <span id="mep-cost">6,75,000</span></span>
+                </div>
+                <div class="flex justify-between text-slate-300">
+                  <span>Flooring, Tiles & Painting (~20%)</span>
+                  <span class="font-semibold text-white">₹ <span id="finishing-cost">6,75,000</span></span>
+                </div>
+                <div class="flex justify-between text-slate-300">
+                  <span>Doors, Windows & Fittings (~10%)</span>
+                  <span class="font-semibold text-white">₹ <span id="fixtures-cost">3,37,500</span></span>
+                </div>
+              </div>
+
+              <div class="mt-4 flex items-center gap-2 text-[11px] text-slate-400">
+                <i class="fa-solid fa-circle-check text-green-400"></i>
+                <span>Includes architectural drawing, structural design & site supervision.</span>
+              </div>
+            </div>
+
+            <div class="pt-6">
+              <a href="#" id="estimator-whatsapp-btn" target="_blank" class="w-full py-3.5 px-4 rounded-xl bg-brand-500 hover:bg-brand-600 text-navy-950 font-extrabold text-sm text-center flex items-center justify-center gap-2 transition shadow-lg shadow-brand-500/20">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Send Estimate to WhatsApp</span>
+              </a>
+              <p class="text-[10px] text-center text-slate-400 mt-2">*Prices are indicative and subject to soil conditions & specific customizations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       ABOUT US SECTION
+       ========================================== -->
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        <!-- Images Grid -->
+        <div class="lg:col-span-6 relative">
+          <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80" alt="Construction engineers examining blueprint" class="w-full h-[420px] object-cover">
+          </div>
+          <!-- Floating Badge -->
+          <div class="absolute -bottom-6 -right-6 sm:bottom-6 sm:-right-6 bg-navy-900 text-white p-5 rounded-2xl shadow-xl z-20 border-2 border-brand-500 max-w-xs">
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 rounded-xl bg-brand-500/20 flex items-center justify-center text-brand-400 text-2xl font-bold">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <div>
+                <p class="text-xl font-bold font-heading">ISO 9001:2015</p>
+                <p class="text-xs text-slate-300">Certified Quality Standards</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- About Content -->
+        <div class="lg:col-span-6 space-y-6">
+          <span class="inline-block px-3.5 py-1 rounded-full bg-brand-100 text-brand-700 font-semibold text-xs tracking-wider uppercase">
+            About Our Company
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-navy-900 leading-tight">
+            Crafting Enduring Spaces with Engineering Integrity
+          </h2>
+          <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+            We are a premier full-service building construction company committed to providing turnkey building solutions. Our team of experienced civil engineers, architects, and dedicated site supervisors manage every phase from soil test to house warming.
+          </p>
+
+          <div class="grid sm:grid-cols-2 gap-4 pt-2">
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 flex items-start gap-3">
+              <i class="fa-solid fa-check-circle text-brand-600 text-xl mt-0.5"></i>
+              <div>
+                <h4 class="font-bold text-navy-900 text-sm">No Cost Escalation</h4>
+                <p class="text-xs text-slate-500 mt-0.5">Fixed price quote agreed in written legal contract.</p>
+              </div>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 flex items-start gap-3">
+              <i class="fa-solid fa-check-circle text-brand-600 text-xl mt-0.5"></i>
+              <div>
+                <h4 class="font-bold text-navy-900 text-sm">Daily WhatsApp Tracking</h4>
+                <p class="text-xs text-slate-500 mt-0.5">Daily photos, material receipts & progress updates.</p>
+              </div>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 flex items-start gap-3">
+              <i class="fa-solid fa-check-circle text-brand-600 text-xl mt-0.5"></i>
+              <div>
+                <h4 class="font-bold text-navy-900 text-sm">430+ Quality Checks</h4>
+                <p class="text-xs text-slate-500 mt-0.5">Multi-tier structural & material testing at every phase.</p>
+              </div>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 flex items-start gap-3">
+              <i class="fa-solid fa-check-circle text-brand-600 text-xl mt-0.5"></i>
+              <div>
+                <h4 class="font-bold text-navy-900 text-sm">10-Year Warranty</h4>
+                <p class="text-xs text-slate-500 mt-0.5">Guaranteed structural warranty & free maintenance.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-4 flex items-center gap-4">
+            <a href="#contact" class="px-6 py-3 rounded-xl bg-navy-900 hover:bg-navy-800 text-white font-semibold text-sm transition">
+              Meet Our Engineers
+            </a>
+            <a href="tel:+919876543210" class="text-sm font-bold text-brand-600 hover:text-brand-700 flex items-center gap-2">
+              <i class="fa-solid fa-phone"></i> +91 98765 43210
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       SERVICES SECTION
+       ========================================== -->
+  <section id="services" class="py-20 bg-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="inline-block px-3.5 py-1 rounded-full bg-brand-100 text-brand-700 font-semibold text-xs tracking-wider uppercase mb-3">
+          What We Do
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-navy-900">Comprehensive Construction Services</h2>
+        <p class="text-slate-600 mt-3 text-base">From groundbreaking to interior styling, we offer end-to-end solutions customized to your lifestyle and budget.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Service 1 -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200 flex flex-col group">
+          <div class="relative h-52 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=700&q=80" alt="Residential Villa" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute top-4 left-4 w-10 h-10 rounded-lg bg-navy-900/80 backdrop-blur-md text-brand-400 flex items-center justify-center font-bold text-lg">
+              <i class="fa-solid fa-house-chimney"></i>
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold font-heading text-navy-900 group-hover:text-brand-600 transition">Residential Construction</h3>
+              <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+                Custom individual houses, luxury villas, duplex homes, and multi-storey apartments built with high-grade materials and 100% Vastu compliance.
+              </p>
+            </div>
+            <a href="#contact" class="mt-4 inline-flex items-center text-sm font-bold text-navy-900 hover:text-brand-600 gap-1.5 transition">
+              Enquire Details <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200 flex flex-col group">
+          <div class="relative h-52 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=700&q=80" alt="Commercial Building" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute top-4 left-4 w-10 h-10 rounded-lg bg-navy-900/80 backdrop-blur-md text-brand-400 flex items-center justify-center font-bold text-lg">
+              <i class="fa-solid fa-building"></i>
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold font-heading text-navy-900 group-hover:text-brand-600 transition">Commercial Construction</h3>
+              <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+                Modern corporate offices, retail shopping complexes, warehouses, and industrial facilities engineered for durability and business functionality.
+              </p>
+            </div>
+            <a href="#contact" class="mt-4 inline-flex items-center text-sm font-bold text-navy-900 hover:text-brand-600 gap-1.5 transition">
+              Enquire Details <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200 flex flex-col group">
+          <div class="relative h-52 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=700&q=80" alt="Architectural 3D Design" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute top-4 left-4 w-10 h-10 rounded-lg bg-navy-900/80 backdrop-blur-md text-brand-400 flex items-center justify-center font-bold text-lg">
+              <i class="fa-solid fa-compass-drafting"></i>
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold font-heading text-navy-900 group-hover:text-brand-600 transition">Architectural & 3D Elevation</h3>
+              <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+                Realistic 3D elevations, photorealistic walkthroughs, structural drawings, municipal approval blueprints, and customized floor plans.
+              </p>
+            </div>
+            <a href="#contact" class="mt-4 inline-flex items-center text-sm font-bold text-navy-900 hover:text-brand-600 gap-1.5 transition">
+              Enquire Details <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200 flex flex-col group">
+          <div class="relative h-52 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=700&q=80" alt="Home Renovation" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute top-4 left-4 w-10 h-10 rounded-lg bg-navy-900/80 backdrop-blur-md text-brand-400 flex items-center justify-center font-bold text-lg">
+              <i class="fa-solid fa-hammer"></i>
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold font-heading text-navy-900 group-hover:text-brand-600 transition">Renovation & Remodeling</h3>
+              <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+                Floor additions, structural strengthening, bathroom upgrades, terrace waterproofing, exterior face-lifts, and complete space modernizations.
+              </p>
+            </div>
+            <a href="#contact" class="mt-4 inline-flex items-center text-sm font-bold text-navy-900 hover:text-brand-600 gap-1.5 transition">
+              Enquire Details <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200 flex flex-col group">
+          <div class="relative h-52 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=700&q=80" alt="Interior Design" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute top-4 left-4 w-10 h-10 rounded-lg bg-navy-900/80 backdrop-blur-md text-brand-400 flex items-center justify-center font-bold text-lg">
+              <i class="fa-solid fa-couch"></i>
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold font-heading text-navy-900 group-hover:text-brand-600 transition">Interior Design & Fitouts</h3>
+              <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+                Turnkey modular kitchens, custom wardrobes, false ceilings, ambient lighting design, and premium wooden panelling for luxurious living.
+              </p>
+            </div>
+            <a href="#contact" class="mt-4 inline-flex items-center text-sm font-bold text-navy-900 hover:text-brand-600 gap-1.5 transition">
+              Enquire Details <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200 flex flex-col group">
+          <div class="relative h-52 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1541888946425-d0fbb18615f3?auto=format&fit=crop&w=700&q=80" alt="Turnkey Construction" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute top-4 left-4 w-10 h-10 rounded-lg bg-navy-900/80 backdrop-blur-md text-brand-400 flex items-center justify-center font-bold text-lg">
+              <i class="fa-solid fa-key"></i>
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold font-heading text-navy-900 group-hover:text-brand-600 transition">Turnkey Project Contracting</h3>
+              <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+                Hassle-free, end-to-end execution where we manage approvals, labor, material procurement, electrical, plumbing, and deliver ready-to-move-in keys.
+              </p>
+            </div>
+            <a href="#contact" class="mt-4 inline-flex items-center text-sm font-bold text-navy-900 hover:text-brand-600 gap-1.5 transition">
+              Enquire Details <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       OUR 5-STEP STREAMLINED PROCESS
+       ========================================== -->
+  <section class="py-20 bg-navy-950 text-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="inline-block px-3.5 py-1 rounded-full bg-brand-500/20 text-brand-400 font-semibold text-xs tracking-wider uppercase mb-3">
+          How It Works
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold font-heading">Our Simple 5-Step Building Journey</h2>
+        <p class="text-slate-400 mt-3 text-base">We take the stress out of building your home with total clarity and zero surprise costs.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
+        <!-- Step 1 -->
+        <div class="glass-card p-6 rounded-2xl relative text-center group hover:border-brand-500 transition duration-300">
+          <div class="w-14 h-14 mx-auto rounded-2xl bg-brand-500 text-navy-950 flex items-center justify-center font-extrabold text-xl mb-4 shadow-lg shadow-brand-500/30">
+            01
+          </div>
+          <h4 class="font-bold text-lg font-heading mb-2">Free Consultation</h4>
+          <p class="text-xs text-slate-300 leading-relaxed">Discuss plot dimensions, budget requirements, and explore architectural possibilities.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="glass-card p-6 rounded-2xl relative text-center group hover:border-brand-500 transition duration-300">
+          <div class="w-14 h-14 mx-auto rounded-2xl bg-slate-800 text-brand-400 border border-brand-500/50 flex items-center justify-center font-extrabold text-xl mb-4">
+            02
+          </div>
+          <h4 class="font-bold text-lg font-heading mb-2">Design & Approval</h4>
+          <p class="text-xs text-slate-300 leading-relaxed">2D floor plans, 3D elevations, structural stability checks, and municipal approval filings.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="glass-card p-6 rounded-2xl relative text-center group hover:border-brand-500 transition duration-300">
+          <div class="w-14 h-14 mx-auto rounded-2xl bg-slate-800 text-brand-400 border border-brand-500/50 flex items-center justify-center font-extrabold text-xl mb-4">
+            03
+          </div>
+          <h4 class="font-bold text-lg font-heading mb-2">Legal Agreement</h4>
+          <p class="text-xs text-slate-300 leading-relaxed">Detailed bill of quantities (BOQ), material brands list, fixed milestones, and completion date.</p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="glass-card p-6 rounded-2xl relative text-center group hover:border-brand-500 transition duration-300">
+          <div class="w-14 h-14 mx-auto rounded-2xl bg-slate-800 text-brand-400 border border-brand-500/50 flex items-center justify-center font-extrabold text-xl mb-4">
+            04
+          </div>
+          <h4 class="font-bold text-lg font-heading mb-2">Live Execution</h4>
+          <p class="text-xs text-slate-300 leading-relaxed">Daily site photos, CCTV live feeds, material batch tests, and strict quality control on site.</p>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="glass-card p-6 rounded-2xl relative text-center group hover:border-brand-500 transition duration-300">
+          <div class="w-14 h-14 mx-auto rounded-2xl bg-brand-500 text-navy-950 flex items-center justify-center font-extrabold text-xl mb-4 shadow-lg shadow-brand-500/30">
+            05
+          </div>
+          <h4 class="font-bold text-lg font-heading mb-2">Key Handover</h4>
+          <p class="text-xs text-slate-300 leading-relaxed">Thorough 430-point audit, deep cleaning, 10-year warranty document & joyful key handover!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       DETAILED PRICING PACKAGES
+       ========================================== -->
+  <section id="packages" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="inline-block px-3.5 py-1 rounded-full bg-brand-100 text-brand-700 font-semibold text-xs tracking-wider uppercase mb-3">
+          Transparent Pricing
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-navy-900">Standard Construction Packages</h2>
+        <p class="text-slate-600 mt-3 text-base">Select the construction package that best fits your requirements and specifications.</p>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-8 items-stretch">
+        <!-- Package 1: Basic -->
+        <div class="rounded-3xl border border-slate-200 bg-slate-50 p-8 flex flex-col justify-between hover:border-slate-300 transition">
+          <div>
+            <div class="mb-4">
+              <span class="text-xs font-bold text-slate-500 uppercase tracking-widest">Standard Package</span>
+              <div class="text-3xl font-extrabold font-heading text-navy-900 mt-1">₹1,850 <span class="text-sm font-normal text-slate-500">/ sq.ft</span></div>
+              <p class="text-xs text-slate-500 mt-2">Durable & reliable construction for budget-friendly residential buildings.</p>
+            </div>
+
+            <hr class="border-slate-200 my-6">
+
+            <ul class="space-y-3 text-xs text-slate-700">
+              <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-green-500 mt-0.5"></i> <strong>Steel:</strong> ARS / Meenakshi / Kamachi 550 TMT</li>
+              <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-green-500 mt-0.5"></i> <strong>Cement:</strong> Dalmia / Chettinad / Priya Grade 53/43</li>
+              <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-green-500 mt-0.5"></i> <strong>Bricks:</strong> Standard Red Wire-cut Bricks</li>
+              <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-green-500 mt-0.5"></i> <strong>Flooring:</strong> Vitrified tiles up to ₹50/sq.ft</li>
+              <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-green-500 mt-0.5"></i> <strong>Bathroom:</strong> Parryware / Cera fittings</li>
+              <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-green-500 mt-0.5"></i> <strong>Electrical:</strong> Kundan / Anchor wires & switches</li>
+              <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-green-500 mt-0.5"></i> <strong>Painting:</strong> Asian Paints Tractor Emulsion</li>
+              <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-green-500 mt-0.5"></i> <strong>Warranty:</strong> 5-Year Structural Guarantee</li>
+            </ul>
+          </div>
+
+          <a href="#contact" class="mt-8 w-full py-3 rounded-xl border-2 border-navy-900 text-navy-900 hover:bg-navy-900 hover:text-white font-bold text-xs text-center transition">
+            Choose Standard
+          </a>
+        </div>
+
+        <!-- Package 2: Premium (Highlighted) -->
+        <div class="rounded-3xl border-2 border-brand-500 bg-white p-8 flex flex-col justify-between shadow-2xl relative transform lg:-translate-y-2">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-brand-500 text-navy-950 font-extrabold text-xs px-4 py-1 rounded-full uppercase tracking-wider shadow-md">
+            ⭐ Recommended For Villas
+          </div>
+          <div>
+            <div class="mb-4">
+              <span class="text-xs font-bold text-brand-600 uppercase tracking-widest">Premium Package</span>
+              <div class="text-3xl font-extrabold font-heading text-navy-900 mt-1">₹2,250 <span class="text-sm font-normal text-slate-500">/ sq.ft</span></div>
+              <p class="text-xs text-slate-500 mt-2">Superior quality materials engineered for aesthetic elegance & long life.</p>
+            </div>
+
+            <hr class="border-slate-200 my-6">
+
+            <ul class="space-y-3 text-xs text-slate-700">
+              <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brand-600 mt-0.5"></i> <strong>Steel:</strong> Tata Tiscon / JSW Neosteel 550D</li>
+              <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brand-600 mt-0.5"></i> <strong>Cement:</strong> UltraTech / ACC / Ramco Supergrade</li>
+              <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brand-600 mt-0.5"></i> <strong>Bricks:</strong> First-class Table Moulded Red Bricks</li>
+              <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brand-600 mt-0.5"></i> <strong>Flooring:</strong> Double Charged Vitrified up to ₹85/sq.ft</li>
+              <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brand-600 mt-0.5"></i> <strong>Bathroom:</strong> Jaquar / Kohler Continental series</li>
+              <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brand-600 mt-0.5"></i> <strong>Doors:</strong> First Quality Teak Wood Main Door</li>
+              <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brand-600 mt-0.5"></i> <strong>Electrical:</strong> Finolex / Havells modular switches</li>
+              <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brand-600 mt-0.5"></i> <strong>Painting:</strong> Asian Paints Apex Ultima & Royal</li>
+              <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brand-600 mt-0.5"></i> <strong>Warranty:</strong> 10-Year Structural Guarantee</li>
+            </ul>
+          </div>
+
+          <a href="#contact" class="mt-8 w-full py-3.5 rounded-xl bg-brand-500 hover:bg-brand-600 text-navy-950 font-extrabold text-xs text-center shadow-lg shadow-brand-500/25 transition">
+            Book Premium Package
+          </a>
+        </div>
+
+        <!-- Package 3: Luxury -->
+        <div class="rounded-3xl border border-slate-200 bg-slate-50 p-8 flex flex-col justify-between hover:border-slate-300 transition">
+          <div>
+            <div class="mb-4">
+              <span class="text-xs font-bold text-slate-500 uppercase tracking-widest">Royal Luxury</span>
+              <div class="text-3xl font-extrabold font-heading text-navy-900 mt-1">₹2,750 <span class="text-sm font-normal text-slate-500">/ sq.ft</span></div>
+              <p class="text-xs text-slate-500 mt-2">Bespoke architectural styling, Italian marble, and smart automation.</p>
+            </div>
+
+            <hr class="border-slate-200 my-6">
+
+            <ul class="space-y-3 text-xs text-slate-700">
+              <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-green-500 mt-0.5"></i> <strong>Steel:</strong> Tata Tiscon 550D / Fe600</li>
+              <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-green-500 mt-0.5"></i> <strong>Cement:</strong> UltraTech Super / Birla Gold</li>
+              <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-green-500 mt-0.5"></i> <strong>Flooring:</strong> Imported Italian Marble / Wooden Floor</li>
+              <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-green-500 mt-0.5"></i> <strong>Bathroom:</strong> Kohler / Grohe sensor fittings</li>
+              <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-green-500 mt-0.5"></i> <strong>Windows:</strong> UPVC German profile double-glazed glass</li>
+              <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-green-500 mt-0.5"></i> <strong>Smart Home:</strong> Automation for Lights & ACs</li>
+              <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-green-500 mt-0.5"></i> <strong>False Ceiling:</strong> Gyproc Designer False Ceilings</li>
+              <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-green-500 mt-0.5"></i> <strong>Warranty:</strong> 15-Year Structural Guarantee</li>
+            </ul>
+          </div>
+
+          <a href="#contact" class="mt-8 w-full py-3 rounded-xl border-2 border-navy-900 text-navy-900 hover:bg-navy-900 hover:text-white font-bold text-xs text-center transition">
+            Choose Luxury Royal
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       PORTFOLIO / PROJECTS GALLERY
+       ========================================== -->
+  <section id="projects" class="py-20 bg-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div>
+          <span class="inline-block px-3.5 py-1 rounded-full bg-brand-100 text-brand-700 font-semibold text-xs tracking-wider uppercase mb-3">
+            Our Portfolio
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-navy-900">Featured Construction Projects</h2>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="flex flex-wrap gap-2 mt-4 md:mt-0" id="project-filters">
+          <button class="filter-btn active px-4 py-2 rounded-lg bg-navy-900 text-white text-xs font-bold transition" data-filter="all">All Projects</button>
+          <button class="filter-btn px-4 py-2 rounded-lg bg-white text-slate-700 hover:bg-slate-200 text-xs font-bold transition" data-filter="residential">Residential</button>
+          <button class="filter-btn px-4 py-2 rounded-lg bg-white text-slate-700 hover:bg-slate-200 text-xs font-bold transition" data-filter="commercial">Commercial</button>
+          <button class="filter-btn px-4 py-2 rounded-lg bg-white text-slate-700 hover:bg-slate-200 text-xs font-bold transition" data-filter="interior">Interior</button>
+        </div>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-item residential bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-slate-200 group">
+          <div class="relative h-64 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" alt="Serene Horizon Villa" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <span class="absolute top-4 left-4 bg-brand-500 text-navy-950 font-extrabold text-[11px] px-3 py-1 rounded-full uppercase">Completed</span>
+          </div>
+          <div class="p-6">
+            <span class="text-xs font-semibold text-brand-600">Residential Villa</span>
+            <h3 class="text-lg font-bold font-heading text-navy-900 mt-1">The Grand Emerald Villa</h3>
+            <p class="text-slate-500 text-xs mt-2">3,400 sq.ft • 4 BHK Duplex with Private Garden & Terrace Pool</p>
+            <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-400">
+              <span><i class="fa-solid fa-location-dot text-brand-500 mr-1"></i> Anna Nagar, Chennai</span>
+              <span class="font-semibold text-slate-700">Turnkey Handover</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-item commercial bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-slate-200 group">
+          <div class="relative h-64 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Tech Hub Commercial" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <span class="absolute top-4 left-4 bg-brand-500 text-navy-950 font-extrabold text-[11px] px-3 py-1 rounded-full uppercase">Completed</span>
+          </div>
+          <div class="p-6">
+            <span class="text-xs font-semibold text-brand-600">Commercial Complex</span>
+            <h3 class="text-lg font-bold font-heading text-navy-900 mt-1">Skyline IT Tech Tower</h3>
+            <p class="text-slate-500 text-xs mt-2">18,500 sq.ft • G+4 Glass Elevation Corporate Space</p>
+            <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-400">
+              <span><i class="fa-solid fa-location-dot text-brand-500 mr-1"></i> OMR IT Corridor</span>
+              <span class="font-semibold text-slate-700">Commercial RCC</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-item residential bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-slate-200 group">
+          <div class="relative h-64 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="Modern Minimalist House" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <span class="absolute top-4 left-4 bg-navy-900 text-brand-400 font-extrabold text-[11px] px-3 py-1 rounded-full uppercase">Ongoing (85%)</span>
+          </div>
+          <div class="p-6">
+            <span class="text-xs font-semibold text-brand-600">Individual House</span>
+            <h3 class="text-lg font-bold font-heading text-navy-900 mt-1">Contemporary Zen Residence</h3>
+            <p class="text-slate-500 text-xs mt-2">2,200 sq.ft • G+1 Contemporary Vastu Compliant Home</p>
+            <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-400">
+              <span><i class="fa-solid fa-location-dot text-brand-500 mr-1"></i> Gandhipuram, Coimbatore</span>
+              <span class="font-semibold text-slate-700">Finishing Stage</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-item interior bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-slate-200 group">
+          <div class="relative h-64 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80" alt="Luxury Living Room Interior" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <span class="absolute top-4 left-4 bg-brand-500 text-navy-950 font-extrabold text-[11px] px-3 py-1 rounded-full uppercase">Completed</span>
+          </div>
+          <div class="p-6">
+            <span class="text-xs font-semibold text-brand-600">Interior Fitout</span>
+            <h3 class="text-lg font-bold font-heading text-navy-900 mt-1">Royal Villa Living & Kitchen</h3>
+            <p class="text-slate-500 text-xs mt-2">Full turnkey interior with acrylic modular kitchen and ambient lighting</p>
+            <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-400">
+              <span><i class="fa-solid fa-location-dot text-brand-500 mr-1"></i> Velachery, Chennai</span>
+              <span class="font-semibold text-slate-700">Interior Handover</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-item residential bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-slate-200 group">
+          <div class="relative h-64 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80" alt="Classic Bungalow" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <span class="absolute top-4 left-4 bg-brand-500 text-navy-950 font-extrabold text-[11px] px-3 py-1 rounded-full uppercase">Completed</span>
+          </div>
+          <div class="p-6">
+            <span class="text-xs font-semibold text-brand-600">Residential Luxury</span>
+            <h3 class="text-lg font-bold font-heading text-navy-900 mt-1">Mayfair Classic Bungalow</h3>
+            <p class="text-slate-500 text-xs mt-2">4,800 sq.ft • Heritage Fusion with Teak Wood Pillars & Courtyard</p>
+            <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-400">
+              <span><i class="fa-solid fa-location-dot text-brand-500 mr-1"></i> ECR, Chennai</span>
+              <span class="font-semibold text-slate-700">Luxury Turnkey</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-item commercial bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-slate-200 group">
+          <div class="relative h-64 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=800&q=80" alt="Commercial Showroom" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <span class="absolute top-4 left-4 bg-navy-900 text-brand-400 font-extrabold text-[11px] px-3 py-1 rounded-full uppercase">Ongoing (70%)</span>
+          </div>
+          <div class="p-6">
+            <span class="text-xs font-semibold text-brand-600">Commercial Retail</span>
+            <h3 class="text-lg font-bold font-heading text-navy-900 mt-1">Aura Retail & Lifestyle Hub</h3>
+            <p class="text-slate-500 text-xs mt-2">12,000 sq.ft • Multi-brand Auto Showroom & Service Lounge</p>
+            <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-400">
+              <span><i class="fa-solid fa-location-dot text-brand-500 mr-1"></i> Avinashi Road, Coimbatore</span>
+              <span class="font-semibold text-slate-700">RCC Superstructure</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CLIENT TESTIMONIALS & TRUST
+       ========================================== -->
+  <section id="testimonials" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="inline-block px-3.5 py-1 rounded-full bg-brand-100 text-brand-700 font-semibold text-xs tracking-wider uppercase mb-3">
+          Happy Homeowners
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-navy-900">What Our Clients Say About Us</h2>
+        <p class="text-slate-600 mt-3 text-base">Read genuine feedback from families and business owners who built with us.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Testimonial 1 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between shadow-sm">
+          <div>
+            <div class="flex text-amber-400 text-sm mb-3">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed italic">
+              "We constructed our 3,200 sq.ft villa in Anna Nagar with this team. From day 1, their transparency in materials and daily WhatsApp updates gave us huge peace of mind. Delivered 2 weeks ahead of schedule!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-6 mt-6 border-t border-slate-200">
+            <div class="w-10 h-10 rounded-full bg-navy-900 text-white font-bold flex items-center justify-center text-sm">
+              RK
+            </div>
+            <div>
+              <h4 class="font-bold text-navy-900 text-sm">R. Karthikeyan</h4>
+              <p class="text-[11px] text-slate-500">Villa Owner, Anna Nagar</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between shadow-sm">
+          <div>
+            <div class="flex text-amber-400 text-sm mb-3">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed italic">
+              "The best part is their fixed price guarantee! No sudden extra demands or hidden costs. Tata Tiscon steel and UltraTech cement were delivered exactly as agreed in the contract."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-6 mt-6 border-t border-slate-200">
+            <div class="w-10 h-10 rounded-full bg-brand-500 text-navy-950 font-bold flex items-center justify-center text-sm">
+              SS
+            </div>
+            <div>
+              <h4 class="font-bold text-navy-900 text-sm">Dr. S. Subramanian</h4>
+              <p class="text-[11px] text-slate-500">Hospital Director, Coimbatore</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between shadow-sm">
+          <div>
+            <div class="flex text-amber-400 text-sm mb-3">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed italic">
+              "Since I live abroad in Dubai, building a home in Chennai was a major worry. Their project manager took care of everything from plan sanctioning to turnkey completion. Truly exceptional service!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-6 mt-6 border-t border-slate-200">
+            <div class="w-10 h-10 rounded-full bg-navy-900 text-white font-bold flex items-center justify-center text-sm">
+              MA
+            </div>
+            <div>
+              <h4 class="font-bold text-navy-900 text-sm">Mohammed Anwar</h4>
+              <p class="text-[11px] text-slate-500">NRI Homeowner, ECR</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       FREQUENTLY ASKED QUESTIONS (FAQ)
+       ========================================== -->
+  <section class="py-20 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <span class="inline-block px-3.5 py-1 rounded-full bg-brand-100 text-brand-700 font-semibold text-xs tracking-wider uppercase mb-3">
+          FAQ
+        </span>
+        <h2 class="text-3xl font-extrabold font-heading text-navy-900">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="space-y-4" id="faq-accordion">
+        <div class="faq-item bg-white rounded-xl border border-slate-200 overflow-hidden">
+          <button type="button" class="faq-trigger w-full px-6 py-4 text-left font-bold text-navy-900 text-sm flex justify-between items-center">
+            <span>What is the current average cost of residential construction per sq.ft?</span>
+            <i class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform"></i>
+          </button>
+          <div class="faq-content px-6 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed hidden">
+            Depending on the brands and specifications selected, our packages range from ₹1,850/sq.ft for Standard packages to ₹2,250/sq.ft for Premium, and ₹2,750+/sq.ft for Royal Luxury. Use our Cost Estimator above for a live breakdown!
+          </div>
+        </div>
+
+        <div class="faq-item bg-white rounded-xl border border-slate-200 overflow-hidden">
+          <button type="button" class="faq-trigger w-full px-6 py-4 text-left font-bold text-navy-900 text-sm flex justify-between items-center">
+            <span>Do you help with government approvals and municipal planning permissions?</span>
+            <i class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform"></i>
+          </button>
+          <div class="faq-content px-6 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed hidden">
+            Yes, our in-house architect and legal liaison team handle CMDA / DTCP approvals, structural stability certificates, and local corporation building permits end-to-end.
+          </div>
+        </div>
+
+        <div class="faq-item bg-white rounded-xl border border-slate-200 overflow-hidden">
+          <button type="button" class="faq-trigger w-full px-6 py-4 text-left font-bold text-navy-900 text-sm flex justify-between items-center">
+            <span>How long does it take to construct a 2,000 sq.ft independent house?</span>
+            <i class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform"></i>
+          </button>
+          <div class="faq-content px-6 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed hidden">
+            Typically a 2,000 sq.ft residential house takes between 5 to 7 months from site excavation to final handover, depending on weather and customization requirements.
+          </div>
+        </div>
+
+        <div class="faq-item bg-white rounded-xl border border-slate-200 overflow-hidden">
+          <button type="button" class="faq-trigger w-full px-6 py-4 text-left font-bold text-navy-900 text-sm flex justify-between items-center">
+            <span>Can I monitor the daily progress if I am living in another city or abroad?</span>
+            <i class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform"></i>
+          </button>
+          <div class="faq-content px-6 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed hidden">
+            Absolutely! We send daily photo/video logs, material testing invoices, and weekly video walkthroughs via dedicated WhatsApp groups. Site live camera access is also available on request.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CONTACT & ENQUIRY SECTION
+       ========================================== -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12">
+        <!-- Contact Info & Direct Channels -->
+        <div class="lg:col-span-5 space-y-6">
+          <span class="inline-block px-3.5 py-1 rounded-full bg-brand-100 text-brand-700 font-semibold text-xs tracking-wider uppercase">
+            Get In Touch
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-navy-900">
+            Let's Discuss Your Dream Project
+          </h2>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Drop by our office or call us directly. Our civil engineers will arrange a free on-site soil and architectural review of your plot.
+          </p>
+
+          <div class="space-y-4 pt-4">
+            <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-200">
+              <div class="w-10 h-10 rounded-lg bg-brand-500/10 text-brand-600 flex items-center justify-center text-lg mt-0.5">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-navy-900 text-sm">Head Office Address</h4>
+                <p class="text-xs text-slate-600 mt-1 company-address">No. 45, 2nd Avenue, Anna Nagar East, Chennai, Tamil Nadu - 600102</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-200">
+              <div class="w-10 h-10 rounded-lg bg-brand-500/10 text-brand-600 flex items-center justify-center text-lg mt-0.5">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-navy-900 text-sm">Direct Phone Numbers</h4>
+                <p class="text-xs text-slate-600 mt-1">
+                  <a href="tel:+919876543210" class="hover:text-brand-600 font-medium">+91 98765 43210</a> / 
+                  <a href="tel:+919876543211" class="hover:text-brand-600 font-medium">+91 98765 43211</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-200">
+              <div class="w-10 h-10 rounded-lg bg-green-500/10 text-green-600 flex items-center justify-center text-lg mt-0.5">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-navy-900 text-sm">WhatsApp Instant Support</h4>
+                <p class="text-xs text-slate-600 mt-1">Chat directly with our Technical Director</p>
+                <a href="https://wa.me/919876543210?text=Hello,%20I%20would%20like%20to%20discuss%20a%20construction%20project" target="_blank" class="inline-block mt-2 text-xs font-bold text-green-600 hover:underline">
+                  Open WhatsApp Chat &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="lg:col-span-7">
+          <div class="bg-slate-50 border border-slate-200 rounded-3xl p-6 sm:p-10 shadow-sm">
+            <h3 class="text-xl sm:text-2xl font-bold font-heading text-navy-900 mb-2">Send an Enquiry</h3>
+            <p class="text-slate-500 text-xs sm:text-sm mb-6">Fill in your requirements below and we will contact you within 2 business hours.</p>
+
+            <form id="main-contact-form" class="space-y-4">
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-navy-900 mb-1">Your Name *</label>
+                  <input type="text" id="contact-name" required placeholder="Your full name" class="w-full px-4 py-2.5 rounded-xl bg-white border border-slate-300 text-slate-800 text-sm focus:outline-none focus:border-brand-500">
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-navy-900 mb-1">Phone / WhatsApp *</label>
+                  <input type="tel" id="contact-phone" required placeholder="10-digit mobile number" class="w-full px-4 py-2.5 rounded-xl bg-white border border-slate-300 text-slate-800 text-sm focus:outline-none focus:border-brand-500">
+                </div>
+              </div>
+
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-navy-900 mb-1">Email Address</label>
+                  <input type="email" id="contact-email" placeholder="you@example.com" class="w-full px-4 py-2.5 rounded-xl bg-white border border-slate-300 text-slate-800 text-sm focus:outline-none focus:border-brand-500">
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-navy-900 mb-1">Plot Location / City *</label>
+                  <input type="text" id="contact-location" required placeholder="e.g. Chennai, Madurai" class="w-full px-4 py-2.5 rounded-xl bg-white border border-slate-300 text-slate-800 text-sm focus:outline-none focus:border-brand-500">
+                </div>
+              </div>
+
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-navy-900 mb-1">Type of Construction</label>
+                  <select id="contact-service" class="w-full px-4 py-2.5 rounded-xl bg-white border border-slate-300 text-slate-800 text-sm focus:outline-none focus:border-brand-500">
+                    <option value="Residential Villa / House">Residential Villa / House</option>
+                    <option value="Commercial Complex">Commercial Complex</option>
+                    <option value="Renovation / Remodeling">Renovation / Remodeling</option>
+                    <option value="Architectural 3D Design">Architectural 3D Design</option>
+                    <option value="Turnkey Interior">Turnkey Interior</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-navy-900 mb-1">Approximate Area (sq.ft)</label>
+                  <input type="text" id="contact-area" placeholder="e.g. 1800 sq.ft" class="w-full px-4 py-2.5 rounded-xl bg-white border border-slate-300 text-slate-800 text-sm focus:outline-none focus:border-brand-500">
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-navy-900 mb-1">Message or Specific Requirements</label>
+                <textarea id="contact-message" rows="3" placeholder="Tell us about your plot dimension, budget, or preferred timeline..." class="w-full px-4 py-2.5 rounded-xl bg-white border border-slate-300 text-slate-800 text-sm focus:outline-none focus:border-brand-500"></textarea>
+              </div>
+
+              <div class="flex flex-col sm:flex-row gap-3 pt-2">
+                <button type="submit" class="flex-1 py-3.5 rounded-xl bg-brand-500 hover:bg-brand-600 text-navy-950 font-bold text-sm tracking-wide transition shadow-lg shadow-brand-500/20 flex items-center justify-center gap-2">
+                  <i class="fa-solid fa-paper-plane"></i>
+                  <span>Submit Enquiry</span>
+                </button>
+                <button type="button" id="whatsapp-submit-btn" class="py-3.5 px-6 rounded-xl bg-green-500 hover:bg-green-600 text-white font-bold text-sm transition flex items-center justify-center gap-2">
+                  <i class="fa-brands fa-whatsapp text-lg"></i>
+                  <span>Send via WhatsApp</span>
+                </button>
+              </div>
+
+              <div id="form-feedback" class="hidden p-3 rounded-lg text-xs font-semibold"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="bg-navy-950 text-slate-400 pt-16 pb-8 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+        <!-- Col 1: Brand Info -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3.5">
+            <img src="sree_draupathi_logo_full.png" alt="Sree Draupathi Builders & Contractors Logo" class="h-16 w-auto object-contain filter drop-shadow">
+            <div>
+              <span class="text-lg font-extrabold font-heading text-white tracking-tight block leading-tight">
+                SREE DRAUPATHI
+              </span>
+              <span class="text-xs font-bold text-brand-400 uppercase tracking-wider block">Builders & Contractors</span>
+              <span class="text-[10px] text-slate-400 italic">"We Build What You Need"</span>
+            </div>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+            Top-rated building construction contractors delivering premium residential homes, modern commercial hubs, and renovations with unyielding quality and transparent pricing.
+          </p>
+          <div class="flex items-center space-x-3 pt-2">
+            <a href="#" class="w-9 h-9 rounded-lg bg-navy-900 hover:bg-brand-500 hover:text-navy-950 flex items-center justify-center text-slate-300 transition"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+            <a href="#" class="w-9 h-9 rounded-lg bg-navy-900 hover:bg-brand-500 hover:text-navy-950 flex items-center justify-center text-slate-300 transition"><i class="fa-brands fa-instagram text-sm"></i></a>
+            <a href="#" class="w-9 h-9 rounded-lg bg-navy-900 hover:bg-brand-500 hover:text-navy-950 flex items-center justify-center text-slate-300 transition"><i class="fa-brands fa-linkedin-in text-sm"></i></a>
+            <a href="#" class="w-9 h-9 rounded-lg bg-navy-900 hover:bg-brand-500 hover:text-navy-950 flex items-center justify-center text-slate-300 transition"><i class="fa-brands fa-youtube text-sm"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h4 class="text-sm font-bold text-white font-heading uppercase tracking-wider mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#home" class="hover:text-brand-400 transition">Home</a></li>
+            <li><a href="#about" class="hover:text-brand-400 transition">About Company</a></li>
+            <li><a href="#services" class="hover:text-brand-400 transition">Our Services</a></li>
+            <li><a href="#estimator" class="hover:text-brand-400 transition">Cost Calculator</a></li>
+            <li><a href="#packages" class="hover:text-brand-400 transition">Packages & Rates</a></li>
+            <li><a href="#projects" class="hover:text-brand-400 transition">Recent Projects</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services -->
+        <div>
+          <h4 class="text-sm font-bold text-white font-heading uppercase tracking-wider mb-4">Our Services</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#services" class="hover:text-brand-400 transition">Villa Construction</a></li>
+            <li><a href="#services" class="hover:text-brand-400 transition">Commercial Buildings</a></li>
+            <li><a href="#services" class="hover:text-brand-400 transition">Architectural 3D Plans</a></li>
+            <li><a href="#services" class="hover:text-brand-400 transition">Home Renovation</a></li>
+            <li><a href="#services" class="hover:text-brand-400 transition">Turnkey Interior Design</a></li>
+            <li><a href="#services" class="hover:text-brand-400 transition">Soil Testing & Survey</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact -->
+        <div>
+          <h4 class="text-sm font-bold text-white font-heading uppercase tracking-wider mb-4">Contact Info</h4>
+          <ul class="space-y-2.5 text-xs">
+            <li class="flex items-start gap-2">
+              <i class="fa-solid fa-location-dot text-brand-500 mt-0.5"></i>
+              <span class="company-address">Anna Nagar, Chennai, Tamil Nadu</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-phone text-brand-500"></i>
+              <a href="tel:+919876543210" class="hover:text-white company-phone">+91 98765 43210</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-envelope text-brand-500"></i>
+              <a href="mailto:info@buildcompany.com" class="hover:text-white company-email">info@buildcompany.com</a>
+            </li>
+            <li class="flex items-center gap-2 text-slate-300">
+              <i class="fa-solid fa-shield-check text-brand-400"></i>
+              <span>Licensed & Insured Builder</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-8 border-t border-slate-800 text-center flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+        <p>&copy; <span id="current-year"></span> Sree Draupathi Builders. All rights reserved.</p>
+        <p class="flex items-center gap-4">
+          <a href="#" class="hover:text-slate-300">Privacy Policy</a>
+          <span>•</span>
+          <a href="#" class="hover:text-slate-300">Terms of Service</a>
+          <span>•</span>
+          <a href="admin.html" target="_blank" class="hover:text-brand-400 text-brand-500 font-bold flex items-center gap-1.5"><i class="fa-solid fa-lock text-[11px]"></i> Admin Portal</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ==========================================
+       FLOATING ACTION BUTTONS (MOBILE & DESKTOP)
+       ========================================== -->
+  <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919876543210?text=Hi%20there,%20I%20would%20like%20to%20get%20a%20construction%20estimate" target="_blank" class="w-13 h-13 p-3.5 rounded-full bg-green-500 hover:bg-green-600 text-white shadow-2xl flex items-center justify-center transition-all transform hover:scale-110 group relative" aria-label="WhatsApp Us">
+      <i class="fa-brands fa-whatsapp text-2xl"></i>
+      <span class="absolute right-16 top-1/2 -translate-y-1/2 bg-navy-950 text-white text-xs px-3 py-1.5 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition shadow-lg pointer-events-none">
+        Chat with Engineer
+      </span>
+    </a>
+  </div>
+
+
+  <!-- ==========================================
+       JAVASCRIPT LOGIC & ADMIN DATA SYNC
+       ========================================== -->
+  <script>
+    // ==========================================
+    // DATA SYNC WITH ADMIN PANEL VIA LOCALSTORAGE
+    // ==========================================
+    function getStoredConfig() {
+      const data = localStorage.getItem('construction_config');
+      if (data) {
+        try {
+          const parsed = JSON.parse(data);
+          if (parsed.companyName && !parsed.companyName.includes('Apex')) {
+            return parsed;
+          }
+        } catch (e) {}
+      }
+      const defaultCfg = {
+        companyName: "Sree Draupathi Builders & Contractors",
+        tagline: "We Build What You Need",
+        phone: "+91 98765 43210",
+        whatsapp: "919876543210",
+        email: "info@sreedraupathibuilders.com",
+        logo: "logo_emblem_transparent.png",
+        address: "Anna Nagar East, Chennai, Tamil Nadu - 600102"
+      };
+      localStorage.setItem('construction_config', JSON.stringify(defaultCfg));
+      return defaultCfg;
+    }
+
+    function getStoredRates() {
+      const data = localStorage.getItem('construction_rates');
+      return data ? JSON.parse(data) : { standard: 1850, premium: 2250, luxury: 2750 };
+    }
+
+    function getStoredProjects() {
+      const data = localStorage.getItem('construction_projects');
+      if (data) return JSON.parse(data);
+
+      return [
+        {
+          id: "p1",
+          title: "The Grand Emerald Villa",
+          category: "residential",
+          status: "Completed",
+          area: "3,400 sq.ft",
+          location: "Anna Nagar, Chennai",
+          image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80",
+          desc: "4 BHK Duplex with Private Garden & Terrace Pool"
+        },
+        {
+          id: "p2",
+          title: "Skyline IT Tech Tower",
+          category: "commercial",
+          status: "Completed",
+          area: "18,500 sq.ft",
+          location: "OMR IT Corridor, Chennai",
+          image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
+          desc: "G+4 Glass Elevation Corporate Space with High Speed Elevators"
+        },
+        {
+          id: "p3",
+          title: "Contemporary Zen Residence",
+          category: "residential",
+          status: "Ongoing (85%)",
+          area: "2,200 sq.ft",
+          location: "Gandhipuram, Coimbatore",
+          image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
+          desc: "G+1 Contemporary Vastu Compliant Home with Skylight Courtyard"
+        },
+        {
+          id: "p4",
+          title: "Royal Villa Living & Kitchen",
+          category: "interior",
+          status: "Completed",
+          area: "1,800 sq.ft",
+          location: "Velachery, Chennai",
+          image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80",
+          desc: "Full turnkey interior with acrylic modular kitchen and ambient lighting"
+        },
+        {
+          id: "p5",
+          title: "Mayfair Classic Bungalow",
+          category: "residential",
+          status: "Completed",
+          area: "4,800 sq.ft",
+          location: "ECR, Chennai",
+          image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80",
+          desc: "Heritage Fusion with Teak Wood Pillars & Courtyard"
+        },
+        {
+          id: "p6",
+          title: "Aura Retail & Lifestyle Hub",
+          category: "commercial",
+          status: "Ongoing (70%)",
+          area: "12,000 sq.ft",
+          location: "Avinashi Road, Coimbatore",
+          image: "https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=800&q=80",
+          desc: "Multi-brand Auto Showroom & Service Lounge"
+        }
+      ];
+    }
+
+    function saveLeadToDatabase(lead) {
+      try {
+        const stored = localStorage.getItem('construction_leads');
+        const leads = stored ? JSON.parse(stored) : [];
+        const newLead = {
+          id: 'lead_' + Date.now(),
+          date: new Date().toLocaleString('en-IN', { dateStyle: 'short', timeStyle: 'short' }),
+          status: 'New',
+          ...lead
+        };
+        leads.unshift(newLead);
+        localStorage.setItem('construction_leads', JSON.stringify(leads));
+      } catch (err) {
+        console.error('Lead save error:', err);
+      }
+    }
+
+    // Apply Config & Dynamic Brand Details
+    const config = getStoredConfig();
+    const rates = getStoredRates();
+
+    document.querySelectorAll('.company-name').forEach(el => el.textContent = config.companyName);
+    document.querySelectorAll('.company-phone').forEach(el => {
+      el.textContent = config.phone;
+      if (el.tagName === 'A') el.href = `tel:${config.phone.replace(/[^0-9+]/g, '')}`;
+    });
+    document.querySelectorAll('.company-email').forEach(el => {
+      el.textContent = config.email;
+      if (el.tagName === 'A') el.href = `mailto:${config.email}`;
+    });
+    document.querySelectorAll('.company-address').forEach(el => el.textContent = config.address);
+    document.querySelectorAll('.whatsapp-link').forEach(el => {
+      el.href = `https://wa.me/${config.whatsapp}?text=Hi%20${encodeURIComponent(config.companyName)},%20I%20am%20looking%20for%20construction%20services`;
+    });
+
+    // Set dynamic year
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    // Mobile Menu Toggle
+    const mobileToggle = document.getElementById('mobile-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+
+    mobileToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      if (mobileMenu.classList.contains('hidden')) {
+        menuIcon.className = 'fa-solid fa-bars text-2xl';
+      } else {
+        menuIcon.className = 'fa-solid fa-xmark text-2xl';
+      }
+    });
+
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuIcon.className = 'fa-solid fa-bars text-2xl';
+      });
+    });
+
+    // Apply Rates to Package cards in Estimator
+    const basicCard = document.querySelector('.pkg-card[data-package="basic"]');
+    const premiumCard = document.querySelector('.pkg-card[data-package="premium"]');
+    const luxuryCard = document.querySelector('.pkg-card[data-package="luxury"]');
+
+    if (basicCard) {
+      basicCard.setAttribute('data-rate', rates.standard);
+      basicCard.querySelector('span.text-xs').textContent = `₹${rates.standard}/sq.ft`;
+    }
+    if (premiumCard) {
+      premiumCard.setAttribute('data-rate', rates.premium);
+      premiumCard.querySelector('span.text-xs').textContent = `₹${rates.premium}/sq.ft`;
+    }
+    if (luxuryCard) {
+      luxuryCard.setAttribute('data-rate', rates.luxury);
+      luxuryCard.querySelector('span.text-xs').textContent = `₹${rates.luxury}/sq.ft`;
+    }
+
+    // ==========================================
+    // INTERACTIVE COST ESTIMATOR LOGIC
+    // ==========================================
+    let currentArea = 1500;
+    let currentRate = rates.premium || 2250;
+    let currentPackageName = "Premium Package";
+    let currentFloors = 1;
+
+    const areaSlider = document.getElementById('area-slider');
+    const areaVal = document.getElementById('area-val');
+    const totalCostDisplay = document.getElementById('total-cost-display');
+    const summaryArea = document.getElementById('summary-area');
+    const summaryRate = document.getElementById('summary-rate');
+    const summaryPackage = document.getElementById('summary-package');
+
+    const civilCost = document.getElementById('civil-cost');
+    const mepCost = document.getElementById('mep-cost');
+    const finishingCost = document.getElementById('finishing-cost');
+    const fixturesCost = document.getElementById('fixtures-cost');
+    const estimatorWhatsappBtn = document.getElementById('estimator-whatsapp-btn');
+
+    function formatINR(number) {
+      return new Intl.NumberFormat('en-IN').format(Math.round(number));
+    }
+
+    function calculateEstimate() {
+      const floorMultiplier = 1 + ((currentFloors - 1) * 0.95);
+      const effectiveArea = currentArea * floorMultiplier;
+      const total = effectiveArea * currentRate;
+
+      const civil = total * 0.50;
+      const mep = total * 0.20;
+      const finishing = total * 0.20;
+      const fixtures = total * 0.10;
+
+      areaVal.textContent = formatINR(currentArea);
+      summaryArea.textContent = formatINR(effectiveArea);
+      summaryRate.textContent = formatINR(currentRate);
+      summaryPackage.textContent = currentPackageName + ` (G+${currentFloors - 1})`;
+      totalCostDisplay.textContent = formatINR(total);
+
+      civilCost.textContent = formatINR(civil);
+      mepCost.textContent = formatINR(mep);
+      finishingCost.textContent = formatINR(finishing);
+      fixturesCost.textContent = formatINR(fixtures);
+
+      const message = `Hello ${config.companyName}, I calculated an estimate on your website:%0A- Built-Up Area: ${currentArea} sq.ft%0A- Floors: G+${currentFloors - 1}%0A- Package: ${currentPackageName} (₹${currentRate}/sq.ft)%0A- Estimated Budget: ₹${formatINR(total)}%0APlease arrange a consultation!`;
+      estimatorWhatsappBtn.href = `https://wa.me/${config.whatsapp}?text=${message}`;
+    }
+
+    areaSlider.addEventListener('input', (e) => {
+      currentArea = parseInt(e.target.value, 10);
+      calculateEstimate();
+    });
+
+    const pkgCards = document.querySelectorAll('.pkg-card');
+    pkgCards.forEach(card => {
+      card.addEventListener('click', () => {
+        pkgCards.forEach(c => {
+          c.classList.remove('active', 'border-brand-500', 'bg-brand-50/50');
+          c.classList.add('border-slate-200');
+        });
+        card.classList.add('active', 'border-brand-500', 'bg-brand-50/50');
+        card.classList.remove('border-slate-200');
+
+        currentRate = parseInt(card.getAttribute('data-rate'), 10);
+        const pkgKey = card.getAttribute('data-package');
+        if (pkgKey === 'basic') currentPackageName = "Standard Package";
+        else if (pkgKey === 'premium') currentPackageName = "Premium Package";
+        else currentPackageName = "Luxury Royal Package";
+
+        calculateEstimate();
+      });
+    });
+
+    const floorBtns = document.querySelectorAll('.floor-btn');
+    floorBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        floorBtns.forEach(b => {
+          b.classList.remove('active', 'border-brand-500', 'bg-brand-50', 'text-navy-900');
+          b.classList.add('border-slate-200', 'text-slate-700');
+        });
+        btn.classList.add('active', 'border-brand-500', 'bg-brand-50', 'text-navy-900');
+        btn.classList.remove('border-slate-200', 'text-slate-700');
+
+        currentFloors = parseInt(btn.getAttribute('data-floors'), 10);
+        calculateEstimate();
+      });
+    });
+
+    calculateEstimate();
+
+    // ==========================================
+    // DYNAMIC PROJECTS RENDERING FROM STORAGE
+    // ==========================================
+    function renderWebsiteProjects() {
+      const projects = getStoredProjects();
+      const grid = document.getElementById('projects-grid');
+      if (!grid) return;
+      grid.innerHTML = '';
+
+      projects.forEach(p => {
+        const item = document.createElement('div');
+        item.className = `project-item ${p.category} bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-slate-200 group`;
+        item.innerHTML = `
+          <div class="relative h-64 overflow-hidden">
+            <img src="${p.image}" alt="${p.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <span class="absolute top-4 left-4 bg-brand-500 text-navy-950 font-extrabold text-[11px] px-3 py-1 rounded-full uppercase">${p.status}</span>
+          </div>
+          <div class="p-6">
+            <span class="text-xs font-semibold text-brand-600 capitalize">${p.category}</span>
+            <h3 class="text-lg font-bold font-heading text-navy-900 mt-1">${p.title}</h3>
+            <p class="text-slate-500 text-xs mt-2">${p.area} • ${p.desc || ''}</p>
+            <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-400">
+              <span><i class="fa-solid fa-location-dot text-brand-500 mr-1"></i> ${p.location}</span>
+              <span class="font-semibold text-slate-700">Turnkey Handover</span>
+            </div>
+          </div>
+        `;
+        grid.appendChild(item);
+      });
+    }
+
+    renderWebsiteProjects();
+
+    // Portfolio Filtering
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => {
+          b.classList.remove('active', 'bg-navy-900', 'text-white');
+          b.classList.add('bg-white', 'text-slate-700');
+        });
+        btn.classList.add('active', 'bg-navy-900', 'text-white');
+        btn.classList.remove('bg-white', 'text-slate-700');
+
+        const filter = btn.getAttribute('data-filter');
+        document.querySelectorAll('.project-item').forEach(item => {
+          if (filter === 'all' || item.classList.contains(filter)) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // FAQ Accordion
+    document.querySelectorAll('.faq-trigger').forEach(button => {
+      button.addEventListener('click', () => {
+        const content = button.nextElementSibling;
+        const icon = button.querySelector('i');
+        const isOpen = !content.classList.contains('hidden');
+
+        document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+        document.querySelectorAll('.faq-trigger i').forEach(i => i.style.transform = 'rotate(0deg)');
+
+        if (!isOpen) {
+          content.classList.remove('hidden');
+          icon.style.transform = 'rotate(180deg)';
+        }
+      });
+    });
+
+    // ==========================================
+    // FORM SUBMISSIONS & ADMIN SYNC
+    // ==========================================
+    const contactForm = document.getElementById('main-contact-form');
+    const feedback = document.getElementById('form-feedback');
+    const whatsappSubmitBtn = document.getElementById('whatsapp-submit-btn');
+
+    function getFormData() {
+      return {
+        name: document.getElementById('contact-name').value.trim(),
+        phone: document.getElementById('contact-phone').value.trim(),
+        email: document.getElementById('contact-email').value.trim(),
+        location: document.getElementById('contact-location').value.trim(),
+        service: document.getElementById('contact-service').value,
+        area: document.getElementById('contact-area').value.trim(),
+        message: document.getElementById('contact-message').value.trim()
+      };
+    }
+
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const data = getFormData();
+
+      if (!data.name || !data.phone || !data.location) {
+        feedback.className = 'p-3 rounded-lg text-xs font-semibold bg-red-100 text-red-700';
+        feedback.textContent = 'Please fill in all required fields (Name, Phone, Location).';
+        feedback.classList.remove('hidden');
+        return;
+      }
+
+      // Save to Admin Database
+      saveLeadToDatabase(data);
+
+      feedback.className = 'p-3 rounded-lg text-xs font-semibold bg-green-100 text-green-700';
+      feedback.textContent = 'Thank you! Your enquiry has been received and logged. Our engineer will call you shortly.';
+      feedback.classList.remove('hidden');
+      contactForm.reset();
+    });
+
+    whatsappSubmitBtn.addEventListener('click', () => {
+      const data = getFormData();
+      if (!data.name || !data.phone) {
+        alert('Please enter your name and phone number before sending to WhatsApp.');
+        return;
+      }
+
+      // Save lead to database before redirect
+      saveLeadToDatabase(data);
+
+      const msg = `Hello ${config.companyName}, I want to enquire about construction:%0A- Name: ${encodeURIComponent(data.name)}%0A- Phone: ${encodeURIComponent(data.phone)}%0A- Location: ${encodeURIComponent(data.location || 'Not specified')}%0A- Service: ${encodeURIComponent(data.service)}%0A- Approx Area: ${encodeURIComponent(data.area || 'TBD')}%0A- Message: ${encodeURIComponent(data.message || 'Please provide details.')}`;
+      window.open(`https://wa.me/${config.whatsapp}?text=${msg}`, '_blank');
+    });
+
+    // Hero Quick Consultation Form Submit
+    document.getElementById('hero-consult-form')?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const form = e.target;
+      const inputs = form.querySelectorAll('input');
+      const select = form.querySelector('select');
+
+      const heroLead = {
+        name: inputs[0].value.trim(),
+        phone: inputs[1].value.trim(),
+        service: select.value,
+        area: inputs[2].value.trim(),
+        location: inputs[3].value.trim(),
+        message: 'Lead submitted via Hero Free Consultation form'
+      };
+
+      saveLeadToDatabase(heroLead);
+      alert('Thank you! Your callback request has been registered. Our senior engineer will call you back shortly.');
+      form.reset();
+    });
+  </script>
+</body>
+</html>
